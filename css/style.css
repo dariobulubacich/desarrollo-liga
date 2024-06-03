@@ -1,0 +1,181 @@
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+/*
+mis fuentes
+font-family: "Radio Canada Big", sans-serif;
+font-family: "Roboto", sans-serif;
+*/
+body {
+    background-color: rgb(231, 158, 62);
+}
+
+header {
+    background-color: rgb(231, 158, 62);
+}
+header .i-e {
+    text-align: end;
+}
+.escudo {
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+.escudo img {
+    justify-content: end;
+    width: 100px; height: 100px;
+}
+h2 {
+    text-align: center;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 35px;
+}
+
+.navegacion ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(231, 206, 153);
+    list-style: none;
+    justify-content:space-between;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    gap: 5rem;
+}
+.navegacion img{
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    width: 50px; height: 50px;
+}
+main {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    /*display: flex;
+    flex-direction: row;
+    justify-content:space-between;*/
+    display: grid;
+    width: 100%;
+    height: 50vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    ;
+}
+footer .redes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+footer .redes1 {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;*/
+    grid-column: 14/15;
+    grid-row: 2/3;
+}
+footer .redes1 .img1 {
+    width: 30px; height: 30px;
+}
+footer .redes2 {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+    grid-column: 14/15;
+    grid-row: 4/5;
+}
+footer .redes2 .img2 {
+    /*width: 50px; height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;*/
+    width: 30px; height: 30px;
+    
+}
+
+@media(max-width: 1024px){
+    .escudo {
+        justify-content: center;
+    }
+    .escudo img {
+        justify-content: center;
+    }
+    .navegacion ul {
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+@media(max-width: 768px){
+    .navegacion ul {
+        background-color: rgb(230, 137, 157);
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 425px){
+    .escudo img {
+        width: 50px; height: 50px;
+    }
+    .escudo h2{
+        text-align: center;
+        font-family: "Radio Canada Big", sans-serif;
+        font-size: 25px;
+    }
+    .navegacion ul {
+        padding-top: 15px;
+        background-color: rgb(231, 158, 62);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        font-size: 50px;
+    }
+    footer {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 50%;
+    }
+    footer .redes {
+            height: 50%;
+            grid-column: 2/3;
+            grid-row: 4/14;
+            font-size: 15px;
+        }
+    footer .redes1 {
+        grid-column: 13/15;
+        grid-row: 3/4;
+    }
+    footer .redes1 .img1 {    
+        width: 20px; height: 20px;
+    }
+    footer .redes1 p {    
+        font-size: 13px;
+    }
+    footer .redes2 {
+        grid-column: 13/15;
+        grid-row: 4/5;
+}   
+    footer .redes2 .img2 {    
+    width: 20px; height: 20px;
+}
+
+    }

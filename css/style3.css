@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 204, 204);
+}
+.escudo {
+    display: flex;
+    justify-content: center;
+}
+.escudo img {
+    width: 150px; height: 150px;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.navegacion ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:space-between;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    gap: 5rem;
+}
+.texto {
+    display: flex;
+    justify-content: center;
+}
+.institucion {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.parrafo {
+    font-size: 15px;
+    font-family: "Radio Canada Big", sans-serif;
+}
+footer {
+    /*display: flex;
+    flex-direction: row;
+    justify-content:space-between;*/
+    display: grid;
+    width: 100%;
+    height: 50vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: rgb(204, 200, 200);
+}
+.direccion {
+    grid-column: 1/2;
+    grid-row: 9/10;
+    padding: 10px;
+}
+.direccion p {
+    font-size: 20px;
+}    
+footer {
+    /*display: flex;
+    flex-direction: row;
+    justify-content:space-between;*/
+    display: grid;
+    width: 100%;
+    height: 50vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: rgb(204, 200, 200);
+}
+.direccion {
+    grid-column: 1/2;
+    grid-row: 9/10;
+    padding: 10px;
+}
+.direccion p {
+    font-size: 20px;
+}    
+footer .red {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;*/
+    grid-column: 12/13;
+    grid-row: 9/10;
+}
+.img1 {
+    width: 30px; height: 30px;
+}
+footer .redes1 .img2 {
+    /*width: 50px; height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;*/
+    width: 30px; height: 30px;
+    
+}
+
+@media(max-width: 768px) {
+    body {
+        background-color: aqua;
+    }
+    header {
+        width: 100%;
+    }
+    .escudo {
+        justify-content: center;
+    }
+    .escudo img {
+        width: 100px; height: 100px;
+    }
+    .titulo {
+        width: auto;
+        align-items: center;
+        font-size: 20px;
+    }
+    .titulo h2 {
+        align-items: center;
+    }
+}
+@media(max-width: 425px) {
+        body {
+        width: auto;
+        background-color: chartreuse;
+    }
+    .navegacion ul {
+        flex-direction: column;
+        width: 100%; height: 100%;
+        background-color: rgb(140, 255, 105);
+        gap: 5px
+    }
+}

@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*
+mis fuentes
+font-family: "Radio Canada Big", sans-serif;
+font-family: "Roboto", sans-serif;
+*/
+body{
+    background-color: rgb(207, 204, 204);
+}
+.escudo {
+    display: flex;
+    justify-content: center;
+}
+.escudo img {
+    width: 150px; height: 150px;
+}
+.titulo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.navegacion ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:space-between;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    gap: 5rem;
+}
+.navegacion ul a {
+    color: aliceblue;
+}
+main {
+    width: 100%;
+    height: 100vh;
+}
+main img {
+    width: 90%;
+}
+footer {
+    /*display: flex;
+    flex-direction: row;
+    justify-content:space-between;*/
+    display: grid;
+    width: 100%;
+    height: 50vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: rgb(204, 200, 200);
+}
+.direccion {
+    grid-column: 1/2;
+    grid-row: 9/10;
+    padding: 10px;
+}
+.direccion p {
+    font-size: 20px;
+}    
+footer .red {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;*/
+    grid-column: 12/13;
+    grid-row: 9/10;
+}
+.img1 {
+    width: 30px; height: 30px;
+}
+footer .redes1 .img2 {
+    /*width: 50px; height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;*/
+    width: 30px; height: 30px;
+    
+}
+
+@media(max-width: 1024px) {
+    body {
+        width: auto;
+        background-color: blue;
+    }
+    header {
+        width: 100%;
+    }
+    .escudo {
+        display: flex;
+        justify-content: center;
+    }
+    .escudo img {
+        width: 150px; width: 150px;
+    }
+    .titulo {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegacion ul {
+        width: 100%;
+        justify-content: space-between;
+        background-color: none;
+    }
+    .navegacion ul a {
+        color: black;
+    }
+    main {
+        width: 100%;
+        height: 100vh;
+    }
+    main img {
+        width: 100%; height: 100%;
+    }
+}
+@media(max-width: 768px) {
+    body {
+        width: auto;
+        background-color: rgb(167, 152, 152);
+    }
+    header {
+        width: 100%;
+    }
+    .escudo {
+        display: flex;
+        justify-content: center;
+    }
+    .escudo img {
+        width: 100px; width: 100px;
+}
+}
+
+@media(max-width: 425px) {
+    body {
+        background-color: forestgreen;
+    }
+    .titulo {
+        font-family: "Roboto", sans-serif;
+        font-size: auto;
+    }
+    .navegacion ul {
+        flex-direction: column;
+        width: 100%; height: 100%;
+        background-color: hotpink;
+        gap: 5px;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+    .gal {
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+}

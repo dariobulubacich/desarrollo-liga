@@ -9,19 +9,13 @@ font-family: "Radio Canada Big", sans-serif;
 font-family: "Roboto", sans-serif;
 */
 body{
-    background-color: rgb(207, 204, 204);
-}
-.escudo {
-    display: flex;
-    justify-content: center;
-}
-.escudo img {
-    width: 150px; height: 150px;
+    background-image: url(../assets/escudo\ para\ fondo.png);
 }
 .titulo {
     display: grid;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
 }
 .navegacion ul {
     padding: 10px;
@@ -34,7 +28,11 @@ body{
     gap: 5rem;
 }
 .navegacion ul a {
-    color: aliceblue;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+.navegacion ul a:hover {
+    box-shadow: inset 200px 0 0 0 #b6b2b2;
 }
 main {
     width: 100%;
@@ -85,7 +83,6 @@ footer .redes1 .img2 {
 @media(max-width: 1024px) {
     body {
         width: auto;
-        background-color: blue;
     }
     header {
         width: 100%;

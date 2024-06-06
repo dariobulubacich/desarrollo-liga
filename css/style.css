@@ -10,24 +10,19 @@ font-family: "Radio Canada Big", sans-serif;
 font-family: "Roboto", sans-serif;
 */
 body {
-    background-color: rgb(231, 158, 62);
+    background-image: url(../assets/escudo\ para\ fondo.png);
 }
 
-header {
-    background-color: rgb(231, 158, 62);
-}
 header .i-e {
     text-align: end;
 }
 .escudo {
-    margin: auto;
-    flex-direction: row;
-    align-items: center;
     display: flex;
+    justify-content: center;
 }
-.escudo img {
-    justify-content: end;
-    width: 100px; height: 100px;
+.escudo a {
+    text-decoration: none;
+    color: black;
 }
 h2 {
     text-align: center;
@@ -38,12 +33,18 @@ h2 {
 .navegacion ul {
     display: flex;
     flex-direction: row;
-    background-color: rgb(231, 206, 153);
-    list-style: none;
+    list-style-type: none;
     justify-content:space-between;
-    font-family: "Roboto", sans-serif;
     align-items: center;
     gap: 5rem;
+}
+.navegacion ul li a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+.navegacion ul li a:hover{
+    box-shadow: inset 200px 0 0 0 #b6b2b2;
 }
 .navegacion img{
     display: flex;
@@ -54,7 +55,7 @@ h2 {
 }
 main {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: grid;
     font-size: 100px;
     justify-content: center;
@@ -66,14 +67,14 @@ footer {
     justify-content:space-between;*/
     display: grid;
     width: 100%;
-    height: 50vh;
+    height: 15vh;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    ;
+    grid-template-rows: repeat(3, 50px);
 }
 footer .redes {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3;
+    text-align: center;
 }
 footer .redes1 {
     /*display: flex;
@@ -81,7 +82,7 @@ footer .redes1 {
     justify-content: space-between;
     align-items: center;*/
     grid-column: 14/15;
-    grid-row: 2/3;
+    grid-row: 3;
 }
 footer .redes1 .img1 {
     width: 30px; height: 30px;
@@ -90,8 +91,9 @@ footer .redes2 {
     /*display: flex;
     flex-direction: row;
     justify-content: space-between;*/
-    grid-column: 14/15;
-    grid-row: 4/5;
+    grid-column: 11/12;
+    grid-row: 3;
+
 }
 footer .redes2 .img2 {
     /*width: 50px; height: 50px;
@@ -103,14 +105,7 @@ footer .redes2 .img2 {
 }
 
 @media(max-width: 1024px){
-    .escudo {
-        justify-content: center;
-    }
-    .escudo img {
-        justify-content: center;
-    }
     .navegacion ul {
-        background-color: aqua;
         justify-content: center;
         align-items: center;
         
@@ -119,23 +114,13 @@ footer .redes2 .img2 {
 
 @media(max-width: 768px){
     .navegacion ul {
-        background-color: rgb(230, 137, 157);
         justify-content: center;
         align-items: center;
     }
 }
 @media(max-width: 425px){
-    .escudo img {
-        width: 50px; height: 50px;
-    }
-    .escudo h2{
-        text-align: center;
-        font-family: "Radio Canada Big", sans-serif;
-        font-size: 25px;
-    }
     .navegacion ul {
         padding-top: 15px;
-        background-color: rgb(231, 158, 62);
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -177,5 +162,4 @@ footer .redes2 .img2 {
     footer .redes2 .img2 {    
     width: 20px; height: 20px;
 }
-
     }
